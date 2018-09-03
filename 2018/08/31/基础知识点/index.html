@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="编程和生活">
 <meta property="og:description" content="熟悉java基础了解java基本语法 数据类型  https://segmentfault.com/a/1190000014453562#articleHeader2四种表示整数：byte short int long两种表示浮点：double float一种表示布尔：boolean一种表示字符：char引用数据类型：数组，类，接口  String算引用数据类型，因为它是一个类，也可以说是一个字符">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-01T02:14:34.992Z">
+<meta property="og:updated_time" content="2018-09-03T13:29:36.392Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基础知识点">
 <meta name="twitter:description" content="熟悉java基础了解java基本语法 数据类型  https://segmentfault.com/a/1190000014453562#articleHeader2四种表示整数：byte short int long两种表示浮点：double float一种表示布尔：boolean一种表示字符：char引用数据类型：数组，类，接口  String算引用数据类型，因为它是一个类，也可以说是一个字符">
@@ -574,7 +574,7 @@
 <p><em>java设计模式</em><br><code>单例模式</code><br>singleton：确保一个类只有一个实例，并提供它的全局访问点<br>懒汉式：</p>
 <pre><code>public class Singleton{
 
-        private static Singleton uniqueInstance;
+        private volatile static Singleton uniqueInstance;
 
         private singleton(){}
 
